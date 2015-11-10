@@ -240,15 +240,47 @@ main{
 			display: inline-block;
 			float:left;
 			width:401px;
-			margin-top: 100px;
+			margin-top: 50px;
 			margin-left: 200px;
-			input[type="email"]{
+			input[type="text"]{
 				width:401px;
 				height:30px;
+				border:1px solid #F04801;
+				background:black;
+				opacity:0.5;
+			}
+			input[type="email"]{
+				margin-top: 10px;
+				width:401px;
+				height:30px;
+				border:1px solid #F04801;
+				background:black;
+				opacity:0.5;
+			}
+			::-webkit-input-placeholder{
+				color: white;
+				font-size: 16px;
+				padding-left: 20px;
 			}
 			textarea{
 				margin-top: 30px;
 				resize:none;
+				width: 400px;
+				height:300px;
+				border:1px solid #F04801;
+				background:black;
+				opacity:0.5;
+				color:white;
+			}
+			input[type="submit"]{
+				background: #F04801;
+				border:none;
+				width:150px;
+				height:35px;
+				border-radius:5px;
+				color:white;
+				opacity:0.7;
+				text-shadow:0px 0px 0px white;
 			}
 		}
 		.more-contacts{
@@ -289,5 +321,27 @@ main{
 	}
 }
 footer{
-	height:300px;
+	clear:both;
+	height:80px;
+	width:1350px;
+	background: #F04801;
+	line-height:50px;
+	.share{
+		padding-top: 20px;
+		width:100%;
+		a{
+			display: inline-block;
+			float:left;
+			color:white;
+			margin-left: 220px;
+			font-size: 25px;
+			span{
+				margin-top: -5px;
+			}
+			i{
+				display: inline-block;
+				float:left;
+			}
+		}
+	}
 }
