@@ -1,15 +1,21 @@
 body {
   padding: 0;
   margin: 0;
+  overflow: hidden;
+  overflow-y: scroll;
 }
-/* -----------------------------------media max width 1500px-------------------------*/
+.wrapper {
+  width: 100%;
+  max-width: 2000px;
+  margin: 0 auto;
+}
 .wrapper header {
   margin: 0;
   padding: 0;
   width: 100%;
   background: url("../images/header-bg.png") no-repeat;
   height: 550px;
-  background-size: 100% 550px;
+  background-size: 100% 100%;
   text-align: center;
 }
 .wrapper header .header-button-right {
@@ -95,8 +101,8 @@ body {
 }
 .wrapper main .about-me .about-img {
   display: inline-block;
-  float: right;
   margin-right: 10%;
+  width: 600px;
 }
 .wrapper main .services {
   text-align: center;
@@ -117,7 +123,7 @@ body {
   width: 100%;
 }
 .wrapper main .services ul li {
-  margin-left: 300px;
+  margin-left: 20%;
   display: inline-block;
   text-align: center;
 }
@@ -126,7 +132,7 @@ body {
   text-decoration: none;
 }
 .wrapper main .services ul li:first-child {
-  margin-left: -100px;
+  margin-left: -10%;
 }
 .wrapper main .services ul li label {
   cursor: pointer;
@@ -362,17 +368,26 @@ body {
 .wrapper footer .share a:first-child {
   margin-left: 0;
 }
+/*----------------------media width 1280px -----------------*/
 @media screen and (max-width: 1280px) {
-  .wrapper {
-    display: none;
-  }
-}
-@media screen and (max-width: 1600px) {
-  
-}
-@media screen and (max-width: 9000px) {
-  .wrapper {
-    max-width: 2000px;
+  .wrapper main .about-me .about-text {
+    display: inline-block;
     margin: 0 auto;
+    width: 300px;
+  }
+  .wrapper main .about-me .about-img {
+    margin: 0 auto;
+    display: block;
+    width: 300px;
+  }
+  .wrapper .contacts {
+    min-height: 1100px;
+  }
+  .wrapper .contacts .form-contacts {
+    display: block;
+    margin: 0 20%;
+  }
+  .wrapper .contacts .more-contacts {
+    display: block;
   }
 }
