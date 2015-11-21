@@ -15,24 +15,36 @@ body{
 		margin:0;
 		padding:0;
 		width:100%;
-		background: url("../images/header-bg.png") no-repeat;
-		height:550px;
-		background-size:100% 100%;
+		background: url("../images/header-bg.png") no-repeat fixed;
+		height:650px;
+		background-size:100% 651px;
 		text-align:center;
+		position: relative;
+		.logo{
+			position: absolute;
+			top: 100px;
+			width:500px;
+			height:200px;
+			margin-left: -10%;
+		}
 		.header-button-right{
 			display: inline-block;
 			float:right;
 			width:50px;
 			height:50px;
 			background: url("../images/header-button-right.png") no-repeat;
+			background-size:100% 100%;
 			margin-top: 100px;
 			cursor:pointer;
+			&:hover{
+				opacity:0.7;
+			}
 		}
 		.header-button-bottom{
 			display: inline-block;
 			width:51px;
 			height:50px;
-			margin-top: 440px;
+			margin-top: 525px;
 			cursor:pointer;
 			a{
 				display:block;
@@ -44,13 +56,15 @@ body{
 				line-height:50px;
 				i{
 					vertical-align:middle;
+					&:hover{
+						color:gold;
+					}
 				}
 			}
 		}
 	}
 	.block-nav{
 		min-height:70px;
-		background: #000;
 		.top-nav{
 			width:100%;
 			background: #36b7b3;
@@ -139,9 +153,12 @@ body{
 					a{
 						color:black;
 						text-decoration:none;
+						&:hover{
+							color:gold;
+						}
 					}
 					&:first-child{
-						margin-left: -10%;
+						margin-left:-3%;
 					}
 					label{
 						cursor:pointer;
@@ -180,11 +197,11 @@ body{
 			h1{
 				margin-top: 60px;
 				a{
-				font-size:1.5em;
-				width:200px;
-				border-bottom:1px solid #DE4B19;
-				text-decoration:none;
-				color:black;
+					font-size:1.5em;
+					width:200px;
+					border-bottom:1px solid #DE4B19;
+					text-decoration:none;
+					color:black;
 				}
 			}
 			.group-portfolio{
@@ -192,19 +209,47 @@ body{
 				.first-line-portfolio{
 					margin-top: 100px;
 					width:100%;
-					img{
-						width:33.3333333%;
-						height:300px;
-						float:left;
+					margin-left: -40px;
+					li{
+						list-style-type:none;
+						
+						img{
+							width:33.3333333%;
+							height:300px;
+							float:left;	
+							position:relative;
+							&:hover{
+								opacity: 0.5;
+								cursor:pointer;
+							}
+						}
+						
 					}
 				}
 				.second-line-portfolio{
 					width:100%;
-					img{
-						width:33.3333333%;
-						height:300px;
-						float:left;
+					margin-left: -40px;
+					li{
+						list-style-type:none;
+						img{
+							width:33.3333333%;
+							height:300px;
+							float:left;
+							&:hover{
+								opacity: 0.5;
+								cursor:pointer;
+							}
+						}
 					}
+				}
+				.portfolio-details{
+					width:100%;
+					height:300px;
+					position: absolute;
+					top:0;
+					left:0;
+					background: rgb(48,48,48,0.1);
+					display: none;
 				}
 			}
 			.car-down{
@@ -314,6 +359,11 @@ body{
 					opacity:0.7;
 					text-shadow:0px 0px 0px white;
 					margin-top:10px;
+					&:hover{
+						background: #AF4011;
+						opacity:0.9;
+						cursor:pointer;
+					}
 				}
 			}
 			.more-contacts{
@@ -379,6 +429,9 @@ body{
 				}
 				&:first-child{
 					margin-left:0;
+				}
+				&:hover{
+					opacity:0.5;
 				}
 			}
 		}

@@ -13,10 +13,18 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  background: url("../images/header-bg.png") no-repeat;
-  height: 550px;
-  background-size: 100% 100%;
+  background: url("../images/header-bg.png") no-repeat fixed;
+  height: 650px;
+  background-size: 100% 651px;
   text-align: center;
+  position: relative;
+}
+.wrapper header .logo {
+  position: absolute;
+  top: 100px;
+  width: 500px;
+  height: 200px;
+  margin-left: -10%;
 }
 .wrapper header .header-button-right {
   display: inline-block;
@@ -24,14 +32,18 @@ body {
   width: 50px;
   height: 50px;
   background: url("../images/header-button-right.png") no-repeat;
+  background-size: 100% 100%;
   margin-top: 100px;
   cursor: pointer;
+}
+.wrapper header .header-button-right:hover {
+  opacity: 0.7;
 }
 .wrapper header .header-button-bottom {
   display: inline-block;
   width: 51px;
   height: 50px;
-  margin-top: 440px;
+  margin-top: 525px;
   cursor: pointer;
 }
 .wrapper header .header-button-bottom a {
@@ -46,9 +58,11 @@ body {
 .wrapper header .header-button-bottom a i {
   vertical-align: middle;
 }
+.wrapper header .header-button-bottom a i:hover {
+  color: gold;
+}
 .wrapper .block-nav {
   min-height: 70px;
-  background: #000;
 }
 .wrapper .block-nav .top-nav {
   width: 100%;
@@ -142,8 +156,11 @@ body {
   color: black;
   text-decoration: none;
 }
+.wrapper main .services ul li a:hover {
+  color: gold;
+}
 .wrapper main .services ul li:first-child {
-  margin-left: -10%;
+  margin-left: -3%;
 }
 .wrapper main .services ul li label {
   cursor: pointer;
@@ -191,19 +208,45 @@ body {
 .wrapper main .portfolio .group-portfolio .first-line-portfolio {
   margin-top: 100px;
   width: 100%;
+  margin-left: -40px;
 }
-.wrapper main .portfolio .group-portfolio .first-line-portfolio img {
+.wrapper main .portfolio .group-portfolio .first-line-portfolio li {
+  list-style-type: none;
+}
+.wrapper main .portfolio .group-portfolio .first-line-portfolio li img {
   width: 33.3333333%;
   height: 300px;
   float: left;
+  position: relative;
+}
+.wrapper main .portfolio .group-portfolio .first-line-portfolio li img:hover {
+  opacity: 0.5;
+  cursor: pointer;
 }
 .wrapper main .portfolio .group-portfolio .second-line-portfolio {
   width: 100%;
+  margin-left: -40px;
 }
-.wrapper main .portfolio .group-portfolio .second-line-portfolio img {
+.wrapper main .portfolio .group-portfolio .second-line-portfolio li {
+  list-style-type: none;
+}
+.wrapper main .portfolio .group-portfolio .second-line-portfolio li img {
   width: 33.3333333%;
   height: 300px;
   float: left;
+}
+.wrapper main .portfolio .group-portfolio .second-line-portfolio li img:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.wrapper main .portfolio .group-portfolio .portfolio-details {
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #303030;
+  display: none;
 }
 .wrapper main .portfolio .car-down {
   color: #F04801;
@@ -314,6 +357,11 @@ body {
   text-shadow: 0px 0px 0px white;
   margin-top: 10px;
 }
+.wrapper main .contacts .form-contacts input[type="submit"]:hover {
+  background: #AF4011;
+  opacity: 0.9;
+  cursor: pointer;
+}
 .wrapper main .contacts .more-contacts {
   display: inline-block;
   width: 400px;
@@ -378,6 +426,9 @@ body {
 }
 .wrapper footer .share a:first-child {
   margin-left: 0;
+}
+.wrapper footer .share a:hover {
+  opacity: 0.5;
 }
 /*----------------------media width 1280px -----------------*/
 @media screen and (max-width: 1280px) {
